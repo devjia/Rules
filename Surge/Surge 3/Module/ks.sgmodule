@@ -1,0 +1,7 @@
+
+#!name=ks
+#!desc=ks direct
+
+[Rule]
+DOMAIN-SUFFIX,kuaishou.com,DIRECT
+DOMAIN-SUFFIX,k.com,DIRECT

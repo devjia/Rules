@@ -1,7 +1,20 @@
-
 #!name=ks
-#!desc=ks direct
+#!desc=ks modules
 
 [Rule]
 DOMAIN-SUFFIX,kuaishou.com,DIRECT
 DOMAIN-SUFFIX,k.com,DIRECT
+DOMAIN-SUFFIX,gifshow.com,DIRECT
+DOMAIN-SUFFIX,getkwai.com,DIRECT
+
+# >> allow bugly
+DOMAIN-SUFFIX,bugly.qq.com,DIRECT
+
+[Host]
+*.kuaishou.com = server:system
+k.com = server:system
+*.gifshow.com = server:system
+*.getkwai.com = server:system
+
+# >> block ocsp
+ocsp.apple.com = 127.0.0.1
